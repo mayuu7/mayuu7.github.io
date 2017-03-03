@@ -1,9 +1,10 @@
 <html>
 	
 <head>
+	<title>MAYANK JAIN</title>
 	<link rel="stylesheet" href="magic-master/magic.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>``
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="particleground-master/jquery.particleground.js"></script>
@@ -23,12 +24,12 @@
 					<a href="index.php" class="navbar-brand">Mayank Jain</a>
 				</div>
 				<div>
-				<ul class="nav navbar-nav navbar-right" style="padding-top:5px">
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px;"><a href="#" onclick="toggleDiv('#page1','#page1');" style="font-weight:bold;color:#5c5656">Home</a></li>
+				<ul class="nav navbar-nav navbar-right">
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px;"  data-toggle="popover" data-placement="bottom"  data-trigger="hover" data-content="You are already here"><a href="#" id="home" style="font-weight:bold;color:#0e0d0d" >Home</a></li>
 				
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page2');" style="font-weight:bold;color:#5c5656">Skills	</a></li>
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#"  onclick="toggleDiv('#page1','#page1');" style="font-weight:bold;color:#5c5656">My Works</a></li>
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page1');" style="font-weight:bold;color:#5c5656">Contact Me</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page2');" style="font-weight:bold;color:#0e0d0d">Skills	</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#"  onclick="toggleDiv('#page1','#page3');" style="font-weight:bold;color:#0e0d0d">My Works</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page4');" style="font-weight:bold;color:#0e0d0d">Contact Me</a></li>
 				</div>
 			</div>
 		</nav>
@@ -42,14 +43,15 @@
 		</div>
 
 		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
-			
-		<a class="text" href='#' onclick="toggleDiv('#page1','#page2');">NEXT</a>
+
+			<button id="btn" class="img-rounded" style="float:left" onclick="toggleTinyBots();">Stop Tiny Bots</button>	
+			<button id="btn" class="img-rounded" style="float:right;" onclick="toggleDiv('#page1','#page2');">Next</button>
 
 		</div>
 	</div>
 	<!-- 2nd page -->
 
-	<div id="page2" class="particleGround" style="z-index:0;width:100%;height:100%;position:absolute;top:0px;right:0px;background: linear-gradient(to bottom, #44aa81,#24d68c, #24493a);">
+	<div id="page2" class="particleGround" style="z-index:0;width:100%;height:100%;position:absolute;top:0px;right:0px;background:linear-gradient(to top,#24d68c,#23875d,#2f4c40);">
 
 		<!--navigation bar-->
 		<nav class="nav navbar-default" style="top:0;left:0;position:absolute;width:100%;opacity:0.4">
@@ -58,15 +60,40 @@
 					<a href="index.php" class="navbar-brand">Mayank Jain</a>
 				</div>
 				<div>
-				<ul class="nav navbar-nav navbar-right" style="padding-top:5px">
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px;"><a href="#" onclick="toggleDiv('#page2','#page1');" style="font-weight:bold;color:#5c5656">Home</a></li>
+				<ul class="nav navbar-nav navbar-right">
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px;"><a href="#" id="home" onclick="toggleDiv('#page2','#page1');" style="font-weight:bold;color:#0e0d0d">Home</a></li>
 				
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px" ><a href="#" onclick="toggleDiv('#page2','#page2');" style="font-weight:bold;color:#5c5656">Skills	</a></li>
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page1');" style="font-weight:bold;color:#5c5656">My Works</a></li>
-				<li style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page1','#page1');" style="font-weight:bold;color:#5c5656">Contact Me</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px" data-toggle="popover" data-placement="bottom"  data-trigger="hover" data-content="You are already here"><a href="#" style="font-weight:bold;color:#0e0d0d">Skills	</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page2','#page3');" style="font-weight:bold;color:#0e0d0d">My Works</a></li>
+				<li  style="padding-right:50px;font-family:Courier New;font-size:20px"><a href="#" onclick="toggleDiv('#page2','#page4');" style="font-weight:bold;color:#0e0d0d">Contact Me</a></li>
 				</div>
 			</div>
 		</nav>
+
+
+
+
+		<div class="0 img-rounded" style="width:200px;height:200px;position:absolute;top:232px;right:600px" onclick="effect();"><img src="images/goku.png" width="200px" height="230px" alt="My Super Powers"/></div>
+		<div class="1 img-rounded" style="display:none;width:200px;height:200px;z-index:1;position:absolute;top:250px;right:600px"><img src="images/html5.png" width="200px" height="200px" alt="html5"/></div>
+		<div class="2 img-rounded" style="display:none;width:200px;height:200px;z-index:2;position:absolute;top:250px;right:584px"><img src="images/css3.png" width="170px" height="180px" alt="css3"/></div>
+		<div class="3 img-rounded" style="display:none;width:200px;height:200px;z-index:3;position:absolute;top:250px;right:600px"><img src="images/bootstrap.png" width="200px" height="200px" alt="bootstrap"/></div>
+		<div class="4 img-rounded" style="display:none;width:200px;height:200px;z-index:4;position:absolute;top:250px;right:600px"><img src="images/javascript.png" width="200px" height="200px" alt="javascript"/></div>
+		<!-- initial 4 -->
+		<div class="5 img-rounded" style="display:none;width:200px;height:200px;z-index:5;position:absolute;top:250px;right:400px"><img src="images/jquery.png" width="200px" height="200px" alt="jquery"/></div>
+		<div class="6 img-rounded" style="display:none;width:200px;height:200px;z-index:6;position:absolute;top:250px;right:200px"><img src="images/api.png" width="200px" height="200px" alt="api"/></div>
+		<div class="7 img-rounded" style="display:none;width:200px;height:200px;z-index:7;position:absolute;top:250px;right:800px"><img src="images/php.png" width="200px" height="200px" alt="PHP"/></div>
+		<div class="8 img-rounded" style="display:none;width:200px;height:200px;z-index:8;position:absolute;top:250px;right:1000px"><img src="images/joomla.png" width="200px" height="200px" alt="joomla"/></div>
+
+
+
+		<!-- bottom buttons -->
+		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
+
+			<button id="btn" class="img-rounded" style="float:left" onclick="toggleTinyBots();">Stop Tiny Bots</button>	
+			<button id="btn" class="img-rounded" style="float:right;" onclick="toggleDiv('#page2','#page3');">Next</button>
+			<button id="btn" class="img-rounded" style="float:right" onclick="toggleDiv('#page2','#page1');">Previous</button>
+			
+		</div>
 	</div>
 		
 
@@ -75,8 +102,11 @@
 
 </html>
 <script>	
-//$('.firstPage').particleground();
 
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+var i=2;
 $('.particleGround').particleground({
     dotColor: '#f7814a',
     lineColor: '#ffd7a3',
@@ -91,16 +121,60 @@ $('.particleGround').particleground({
 
 function  toggleDiv(id1,id2){
 	$(id1).addClass('magictime holeOut');
-   setTimeout(function(){$(id2).addClass('magictime boingInUp');},600);
-   setTimeout(function(){$(id1).removeClass('magictime holeOut');$(id2).removeClass('magictime boingInUp');$(id2).css('z-index',4);},3000);
+   setTimeout(function(){$(id2).addClass('magictime puffIn');},600);
+   setTimeout(function(){$(id1).removeClass('magictime holeOut');$(id2).removeClass('magictime puffIn');$(id2).css('z-index',i);},1000);
+   i++;
   
 
+}
+
+
+
+
+//for skills animation
+function effect(){
+	
+
+	$('.1').css('display','none');$('.1').removeClass('magictime perspectiveRight');
+    $('.2').css('display','none');$('.2').removeClass('magictime perspectiveDown');
+    $('.3').css('display','none');$('.3').removeClass('magictime perspectiveLeft');
+    $('.4').css('display','none');$('.4').removeClass('magictime perspectiveUp');
+    $('.5').css('display','none');$('.5').removeClass('magictime perspectiveRight');
+    $('.6').css('display','none');$('.6').removeClass('magictime perspectiveDown');
+    $('.7').css('display','none');$('.7').removeClass('magictime perspectiveLeft');
+    $('.8').css('display','none');$('.8').removeClass('magictime perspectiveUp');
+ 
+   setTimeout(function(){$('.1').css('display','block');$('.1').addClass('magictime perspectiveRight')},1000);
+   setTimeout(function(){$('.2').css('display','block');$('.2').addClass('magictime perspectiveDown')},2000);
+   setTimeout(function(){$('.3').css('display','block');$('.3').addClass('magictime perspectiveLeft')},3000);
+   setTimeout(function(){$('.4').css('display','block');$('.4').addClass('magictime perspectiveUp')},4000);
+   setTimeout(function(){$('.5').css('display','block');$('.5').addClass('magictime perspectiveRight')},5000);
+   setTimeout(function(){$('.6').css('display','block');$('.6').addClass('magictime perspectiveDown')},6000);
+   setTimeout(function(){$('.7').css('display','block');$('.7').addClass('magictime perspectiveLeft')},7000);
+   setTimeout(function(){$('.8').css('display','block');$('.8').addClass('magictime perspectiveUp')},8000);
+   
+
+    
+ 
+}
+
+function toggleTinyBots(){
+
+	if($('#btn').html()=='Stop Tiny Bots'){
+		$('.particleground').particleground('pause');
+		$("#btn").html('Start Tiny Bots');
+	}
+	else if ($('#btn').html()=='Start Tiny Bots') {
+		$('.particleground').particleground('start');
+		$("#btn").html('Stop Tiny Bots');
+		
+	}
 }
 
 //for typed cursor
 $(function(){
       $(".element").typed({
-        strings: ["<h1 class='text' style='font-size:32px'>WHO AM I??</h1><br><h4 class='text'>Hello! My name is Mayank Jain and <br>I am a full stack developer and coder.<br>I like to code, design and explore the world of web.<br>I am a freelancer and would love to assist you in your projects.</h4>"],
+        strings: ["<br><h4 class='text'>Hello! My name is Mayank Jain and <br>I am a full stack developer and coder.<br>I like to code, design and explore the world of web.<br>I am a freelancer and would love to assist you in your projects.</h4>"],
         typeSpeed: 10,
         showCursor: false,
         contentType: 'html'
@@ -109,6 +183,9 @@ $(function(){
         
       });
   });
+
+
+
 </script>
 <style>
 .text{
@@ -120,8 +197,26 @@ $(function(){
 }
 
 
-a:hover{
-	color:white;
-	text-decoration:none;
+
+
+#btn{
+	color:black;
+	padding-bottom:0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: white;
+    border: none;
+    padding: 7px 15px 7px 15px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
 }
+
+#btn:hover{
+	background-color:#6890e8;
+    color: white;
+}
+
 </style>
