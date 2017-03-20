@@ -7,19 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css">
 	<link rel="stylesheet" href="magic-master/magic.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monoton" />
 
 
 	<!-- javascript files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<<<<<<< HEAD
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-=======
-	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
->>>>>>> origin/master
 	<script src="particleground-master/jquery.particleground.js"></script>
 	<script src="https://cdn.rawgit.com/chrisma/birdman.js/gh-pages/birdman.js"></script>
 	<script type="text/javascript" src="tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+	<script type="text/javascript" src="novacancy.js-master/javascript/jquery.novacancy.min.js"></script>
 	
 </head>
 
@@ -53,7 +50,7 @@
 		<!-- text ends -->
 		   
 		<div style="position: absolute;left: 0;top: 55%;padding: 0 20px;width: 100%;text-align: center;">
-			<img id="myPic" class="img img-circle" width="200px" height="200px" src="images/me.jpg" alt="My Pic"/>
+			<img id="myPic" class="img img-circle" width="200px" height="200px" src="images/me4.png" alt="My Pic"/>
 		</div>
 		<!-- footer -->
 		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
@@ -86,8 +83,11 @@
 
 
 
-
-		<div class="0 img-rounded" style="width:200px;height:200px;position:absolute;top:232px;right:600px" onclick="effect();">hello</div>
+		<div class="skillsText">
+			 <p class="text" style="position: absolute;right: 34px;top: 65px;">To know what I am good at</p>
+			 <p class="text" style="position: absolute;right: 7px;top: 106px;">just click on the button there. </p>
+		</div>
+		<div class="skillsDiv" style="width:200px;height:200px;position:absolute;top:232px;right:600px;text-align:center" onclick="effect();"><p id="know" style="font-family:Monoton;font-size:50px">KNOW </p><p id="my" style="font-family:Monoton;font-size:50px" >MY </p><p id="skills" style="font-family:Monoton;font-size:50px">SKILLS</p></div>
 		<div class="1 img-rounded" style="display:none;width:200px;height:200px;z-index:1;position:absolute;top:250px;right:600px"><img src="images/html5.png" width="200px" height="200px" alt="html5"/></div>
 		<div class="2 img-rounded" style="display:none;width:200px;height:200px;z-index:2;position:absolute;top:250px;right:584px"><img src="images/css3.png" width="170px" height="180px" alt="css3"/></div>
 		<div class="3 img-rounded" style="display:none;width:200px;height:200px;z-index:3;position:absolute;top:250px;right:600px"><img src="images/bootstrap.png" width="200px" height="200px" alt="bootstrap"/></div>
@@ -109,7 +109,41 @@
 			
 		</div>
 	</div>
-		
+
+	<!-- page3 -->
+	<div id="page3" class="particleGround" style="z-index:0;width:100%;height:100%;position:absolute;top:0px;right:0px;">
+
+		<!--navigation bar-->
+		<div style="top:0;left:0;position:absolute;width:100%;">
+			<div class="container-fluid">
+				<div>
+				<ul style="list-style:none;padding-top: 7px;text-align:center">
+				<li  style="display:inline;padding-right:50px;font-size:20px;"><a href="#" onclick="toggleDiv('#page3','#page1');" class="text">Home</a></li>
+				
+				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page3','#page2');">Skills	</a></li>
+				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#"  class="text tooltipsters">My Works</a></li>
+				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page3','#page4');" class="text">Contact Me</a></li>
+				</ul>
+				</div>
+			</div>
+			<hr style="width:631px;margin-top: 0px;">
+		</div>
+		<!-- navigation ends -->
+
+		<!-- bottom buttons -->
+		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
+
+			<button id="btn" class="img-rounded text tinybotButton" style="float:left" onclick="toggleTinyBots();">Stop Tiny Bots</button>	
+			<button id="btn" class="img-rounded text" style="float:right;" onclick="toggleDiv('#page3','#page4');">Next</button>
+			<button id="btn" class="img-rounded text" style="float:right" onclick="toggleDiv('#page3','#page2');">Previous</button>
+			
+		</div>
+
+
+
+
+
+	</div>
 
 
 </body>
@@ -124,7 +158,38 @@ $(document).ready(function(){
     		theme: 'tooltipster-light',
     		content: 'You are already here!'
 
-    	});
+    });
+
+    // for no vacancy 
+    $('#know').novacancy({
+	'reblinkProbability': 0.4,
+	'blinkMin': 0.2,
+	'blinkMax': 0.6,
+	'loopMin': 0.5,
+	'loopMax': 10,
+	'color': 'RED',
+	'blink':0
+	});
+	$('#my').novacancy({
+	'reblinkProbability': 0.4,
+	'blinkMin': 0.2,
+	'blinkMax': 0.6,
+	'loopMin': 0.5,
+	'loopMax': 10,
+	'color': 'ORANGE',
+	'blink':0,
+	'glow': ['0 0 80px #e81e1e', '0 0 30px #ef0e0e', '0 0 6px #0000ff'],
+	});
+    $('#skills').novacancy({
+	'reblinkProbability': 0.4,
+	'blinkMin': 0.2,
+	'blinkMax': 0.6,
+	'loopMin': 0.5,
+	'loopMax': 10,
+	'color': 'WHITE',
+	'blink':0,
+	'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff'],
+	});
     $('#myPic').css('display','none');
    	$('#myPic').fadeIn(4000);  
    	$('.element').birdman(birdmanConfigLines);
@@ -135,6 +200,8 @@ var i=2;//for toggle Div
 
 function  toggleDiv(id1,id2){
 	$(id1).addClass('magictime holeOut');
+	$(id1).fadeOut();
+	$(id2).fadeIn();
    setTimeout(function(){$(id1).removeClass('magictime holeOut');$(id2).css('z-index',i);},1000);
    if(id2=='#page1'){
    		$('.element').birdman(birdmanConfigLines);
@@ -142,6 +209,10 @@ function  toggleDiv(id1,id2){
    		$('#myPic').fadeIn(4000);
    }
    else if(id2=='#page2'){
+   		$('.skillsDiv').css('display','none');
+   		$('.skillsText').css('display','none');
+   		$('.skillsDiv').fadeIn(3000);
+   		$('.skillsText').fadeIn(3000);
    		$('.1').css('display','none');
    		$('.2').css('display','none');
    		$('.3').css('display','none');
@@ -181,7 +252,14 @@ function effect(){
    setTimeout(function(){$('.7').css('display','block');$('.7').addClass('magictime perspectiveLeft')},7000);
    setTimeout(function(){$('.8').css('display','block');$('.8').addClass('magictime perspectiveUp')},8000);
    
-
+   		$('.1').css('display','none');
+   		$('.2').css('display','none');
+   		$('.3').css('display','none');
+		$('.4').css('display','none');
+   		$('.5').css('display','none');
+   		$('.6').css('display','none');
+   		$('.7').css('display','none');
+   		$('.8').css('display','none');
     
  
 }
@@ -224,7 +302,7 @@ var birdmanConfigLines = {
 <style>
 .particleGround{
 	
-	background: linear-gradient(to bottom,#424344,#484d51,#576570);
+	background: linear-gradient(to bottom,#424344,#484d51,#8b8b8b);
 }
 .text{
 	
@@ -268,8 +346,9 @@ a:active{
 }
 
 #btn:hover{
-	background-color:#576570;
+	background-color:#8b8b8b;
     color: #f9dd54;
+    border:1px solid #f9dd54;
 }
 
 .tooltip_templates{
