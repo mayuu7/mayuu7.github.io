@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
 	
 <head>
-	<title>MAYANK JAIN</title>
+	<title>Mayank Jain</title>
+	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/tooltipster.bundle.min.css" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css">
@@ -45,7 +47,7 @@
 		<!-- for text -->
 		<p class="element text" style="position: absolute;left: 0;top: 20%;padding: 0 20px;width: 100%;text-align: center;">Hello! My name is Mayank Jain and </p>
 		<p class="element text" style="position: absolute;left: 0;top: 28%;padding: 0 20px;width: 100%;text-align: center;">I am a full stack developer and coder.</p>
-		<p class="element text" style="position: absolute;left: 0;top: 36%;padding: 0 20px;width: 100%;text-align: center;">I like to code, design and explore the world of web.</p>
+		<p class="element text" style="position: absolute;left: 0;top: 36%;padding: 0 20px;width: 100%;text-align: center;">Coding is my passion and I like to make stunning websites.</p>
 		<p class="element text" style="position: absolute;left: 0;top: 44%;padding: 0 20px;width: 100%;text-align: center;">I am a freelancer and would love to assist you in your projects.</p>
 		<!-- text ends -->
 		   
@@ -85,9 +87,9 @@
 
 		<div class="skillsText">
 			 <p class="text" style="position: absolute;right: 34px;top: 65px;">To know what I am good at</p>
-			 <p class="text" style="position: absolute;right: 7px;top: 106px;">just click on the button there. </p>
+			 <p class="text" style="position: absolute;right: 7px;top: 106px;">just click there. </p>
 		</div>
-		<div class="skillsDiv" style="width:200px;height:200px;position:absolute;top:232px;right:600px;text-align:center" onclick="effect();"><p id="know" style="font-family:Monoton;font-size:50px">KNOW </p><p id="my" style="font-family:Monoton;font-size:50px" >MY </p><p id="skills" style="font-family:Monoton;font-size:50px">SKILLS</p></div>
+		<div class="skillsDiv skillsTipster" style="width:200px;height:200px;position:absolute;top:232px;right:600px;text-align:center;cursor:pointer" onclick="effect();"><p id="know" style="font-family:Monoton;font-size:50px">KNOW </p><p id="my" style="font-family:Monoton;font-size:50px" >MY </p><p id="skills" style="font-family:Monoton;font-size:50px">SKILLS</p></div>
 		<div class="1 img-rounded" style="display:none;width:200px;height:200px;z-index:1;position:absolute;top:250px;right:600px"><img src="images/html5.png" width="200px" height="200px" alt="html5"/></div>
 		<div class="2 img-rounded" style="display:none;width:200px;height:200px;z-index:2;position:absolute;top:250px;right:584px"><img src="images/css3.png" width="170px" height="180px" alt="css3"/></div>
 		<div class="3 img-rounded" style="display:none;width:200px;height:200px;z-index:3;position:absolute;top:250px;right:600px"><img src="images/bootstrap.png" width="200px" height="200px" alt="bootstrap"/></div>
@@ -120,7 +122,8 @@
 				<ul style="list-style:none;padding-top: 7px;text-align:center">
 				<li  style="display:inline;padding-right:50px;font-size:20px;"><a href="#" onclick="toggleDiv('#page3','#page1');" class="text">Home</a></li>
 				
-				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page3','#page2');">Skills	</a></li>
+				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page3','#page2');" class="text
+				">Skills</a></li>
 				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#"  class="text tooltipsters">My Works</a></li>
 				<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page3','#page4');" class="text">Contact Me</a></li>
 				</ul>
@@ -129,6 +132,63 @@
 			<hr style="width:631px;margin-top: 0px;">
 		</div>
 		<!-- navigation ends -->
+        
+
+        <div class="col-sm-12 col-md-12 col-lg-12" style="position:absolute;top:150px;">
+
+        	<!-- for legal suvidha -->
+			<div class="col-sm-4 col-md-4 col-lg-4 myWorks" id="myWork1" style="margin-left:60px">
+				<a class="myWorkTipster" href="https://www.legalsuvidha.com" target="_blank" class="text">
+					<img id="myWorkImage1" src="images/legalSuvidha.png" width="350px" height="150px" alt="Legal Suvidha" style="position:absolute;top:0px;left:0px"/>
+				</a>
+
+				<div style="width:100%;height:20px;text-align:center;position:absolute;top:150px;left:0px;">
+					<a href="https://www.legalsuvidha.com" target="_blank" class="text">www.legalsuvidha.com</a>
+				</div>
+				<div  class="text" id="myWork1Content" style="display:none;width:100%;height:230px;text-align:center;position:absolute;top:170px;left:0px;">
+				   <br>	
+				   I created this website completely on my own managing both its frond end and back end along with server deployment.
+
+				</div>
+			
+			</div>
+
+			<!-- for london journals press -->
+			<div class="col-sm-4 col-md-4 col-lg-4 myWorks" id="myWork2">
+				<a class="myWorkTipster" href="https://www.journalspress.com" target="_blank" class="text">
+					<img id="myWorkImage2" src="images/londonJournalsPress.png" alt="London Journals Press" width="350px" height="150px" style="position:absolute;top:0px;left:0px"/>
+				</a>
+
+				<div style="width:100%;height:20px;text-align:center;position:absolute;top:150px;left:0px;">
+					<a href="https://www.journalspress.com" target="_blank" class="text">www.journalspress.com</a>
+				</div>
+				<div  class="text" id="myWork2Content" style="display:none;width:100%;height:230px;text-align:center;position:absolute;top:170px;left:0px;">
+					
+				    <br>It is a Joomla based website and I am responsible for managing both its front end as well as backend along with database management.
+
+				</div>
+			
+			</div>
+
+			<!-- for global journals -->
+			<div class="col-sm-4 col-md-4 col-lg-4 myWorks" style="margin:0px" id="myWork3" >
+				<a class="myWorkTipster" href="https://www.globaljournals.org" target="_blank" class="text">
+					<img id="myWorkImage3" src="images/globalJournals.jpg" alt="Global Journals" width="350px" height="150px" style="position:absolute;top:0px;left:0px"/>
+				</a>
+
+				<div style="width:100%;height:20px;text-align:center;position:absolute;top:150px;left:0px;">
+					<a href="https://www.globaljournals.org" target="_blank" class="text">www.globaljournals.org</a>
+				</div>
+				<div  class="text" id="myWork3Content" style="display:none;width:100%;height:230px;text-align:center;position:absolute;top:170px;left:0px;">
+					
+				   <br>It is a Joomla based website and I manage its front end and design new pages for the website.
+
+				</div>
+			
+			</div>
+			
+		</div>
+
 
 		<!-- bottom buttons -->
 		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
@@ -138,11 +198,49 @@
 			<button id="btn" class="img-rounded text" style="float:right" onclick="toggleDiv('#page3','#page2');">Previous</button>
 			
 		</div>
+    </div>
+	<!-- end of page 3 -->
+
+	<!-- start of page 4 -->
+	<div id="page4" class="particleGround" style="z-index:0;width:100%;height:100%;position:absolute;top:0px;right:0px;">
+	<!--navigation bar-->
+		<div style="top:0;left:0;position:absolute;width:100%;">
+			<div class="container-fluid">
+				<div>
+					<ul style="list-style:none;padding-top: 7px;text-align:center">
+					<li  style="display:inline;padding-right:50px;font-size:20px;"><a href="#" class="text" onclick="toggleDiv('#page4','#page1');">Home</a></li>					
+					<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page4','#page2');" class="text">Skills	</a></li>
+					<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" onclick="toggleDiv('#page4','#page3');" class="text">My Works</a></li>
+					<li  style="display:inline;padding-right:50px;font-size:20px"><a href="#" class="text tooltipsters" >Contact Me</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+			<hr style="width:631px;margin-top: 0px;">
+		</div>
 
 
+		<!-- for text -->
+		<p class="contact text" style="position: absolute;left: 0;top: 20%;padding: 0 20px;width: 100%;text-align: center;">If you like what I do and want to contact me then drop a message here.</p>
+		
+		<p class="contact text" style="position: absolute;left: 0;top: 48%;padding: 0 20px;width: 100%;text-align: center;">Email : jainmayank0@gmail.com</p>
+		<p class="contact text" style="position: absolute;left: 0;top: 56%;padding: 0 20px;width: 100%;text-align: center;">Contact Number : +91-9165918889 , +91-7974450846</p>
+		<p class="contact text" style="position: absolute;left: 0;top: 87%;padding: 0 20px;width: 100%;text-align: center;">
+			<a class="facebookTipster" href="https://www.facebook.com/mayank.jain.5030" target="_blank"><img class="img img-circle" src="images/facebookLogo.png" width="70px" height="70px"></a>
+			<a class="linkedInTipster" href="https://linkedin.com/in/mayank-jain-262635140" target="_blank"><img class="img img-circle" src="images/linkedInLogo.png" width="50px" height="50px"></a>
+			<a class="upworkTipster" href="https://www.upwork.com/o/profiles/users/_~01cb123fbbeae21bd9/" target="_blank"><img class="img img-circle" src="images/upworkLogo.png" width="50px" height="50px"></a> 
+			<a class="freelancerTipster" href="https://www.freelancer.in/u/mayuu7.html" target="_blank"><img class="img img-circle" src="images/freelancerLogo.jpg" width="50px" height="50px"></a>
+		</p>
+		<!-- text ends -->
+		<!-- footer -->
+		<div style="position: absolute;left: 0;top: 93%;padding: 0 20px;width: 100%;text-align: center;">
 
+			<button id="btn" class="img-rounded text tinybotButton" style="float:left" onclick="toggleTinyBots();">Stop Tiny Bots</button>	
+			<button id="btn" class="img-rounded text" style="float:right;" onclick="toggleDiv('#page4','#page3');">Previous</button>
 
-
+		</div>
+		<!-- footer ends -->
 	</div>
 
 
@@ -152,11 +250,60 @@
 <script>	
 
 $(document).ready(function(){
+
+	//making everything disappear on start
+		$('.skillsDiv').css('display','none');
+		$('.skillsText').css('display','none');
+		$('.myWorks').css('display','none');
+		$('.contact').css('display','none')
+
     $('.tooltipsters').tooltipster({
     		animation: 'fall',
     		contentCloning: true,
     		theme: 'tooltipster-light',
     		content: 'You are already here!'
+
+    });
+    $('.facebookTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Connect on Facebook'
+
+    });
+    $('.linkedInTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Connect on LinkedIn'
+
+    });
+    $('.upworkTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Connect on Upwork'
+
+    });
+    $('.freelancerTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Connect on Freelancer'
+
+    });
+    $('.skillsTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Click Here'
+
+    });
+     $('.myWorkTipster').tooltipster({
+    		animation: 'grow',
+    		contentCloning: true,
+    		theme: 'tooltipster-light',
+    		content: 'Click to Visit'
 
     });
 
@@ -221,6 +368,14 @@ function  toggleDiv(id1,id2){
    		$('.6').css('display','none');
    		$('.7').css('display','none');
    		$('.8').css('display','none');
+   }
+   else if(id2=='#page3'){
+   		$('.myWorks').css('display','none');
+   		$('.myWorks').fadeIn(2000);
+   }
+   else if(id2=='#page4'){
+   		$('.contact').css('display','none');
+   		$('.contact').fadeIn(2000);
    }
    i++;
   
@@ -295,6 +450,19 @@ var birdmanConfigLines = {
 };
 
 
+//for myWorks Page 
+$('#myWorkImage1').hover(function(){$('#myWork1').css('background','linear-gradient(to top,rgb(23, 65, 101) 20%,#66ceff)');$('#myWork1Content').fadeIn(500);},
+	function(){$('#myWork1').css("background", "none");$('#myWork1Content').fadeOut(200);
+});
+
+
+$('#myWorkImage2').hover(function(){$('#myWork2').css('background','linear-gradient(to top,rgb(23, 65, 101) 20%,#66ceff)');$('#myWork2Content').fadeIn(500);},
+	function(){$('#myWork2').css("background", "none");$('#myWork2Content').fadeOut(200);
+});
+
+$('#myWorkImage3').hover(function(){$('#myWork3').css('background','linear-gradient(to top,rgb(23, 65, 101) 20%,#66ceff)');$('#myWork3Content').fadeIn(500);},
+	function(){$('#myWork3').css("background", "none");$('#myWork3Content').fadeOut(200);
+});
 
 
 
@@ -302,7 +470,7 @@ var birdmanConfigLines = {
 <style>
 .particleGround{
 	
-	background: linear-gradient(to bottom,#424344,#484d51,#8b8b8b);
+	background: linear-gradient(to bottom,rgb(101, 124, 146),#2c5473,rgb(5, 25, 58));;
 }
 .text{
 	
@@ -354,4 +522,19 @@ a:active{
 .tooltip_templates{
 	display:none;
 }
+
+
+.myWorks{
+	
+	/*background:linear-gradient(to top,rgb(26, 12, 93) 20%,#66ceff);*/
+	
+	height:400px;
+	width:350px;
+	margin-right:80px;
+
+}
+
+
+
+
 </style>
