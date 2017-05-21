@@ -250,13 +250,13 @@
 <script>	
 
 $(document).ready(function(){
-	for(var j=1;j<5;j++){
+	// for(var j=1;j<5;j++){
 
-		var height=window.innerHeight;
-		var width=window.innerWidth;
-		jQuery('#page'+j).css('height',height);
-		jQuery('#page'+j).css('width',width);
-	}
+	// 	var height=window.innerHeight;
+	// 	var width=window.innerWidth;
+	// 	jQuery('#page'+j).css('height',height);
+	// 	jQuery('#page'+j).css('width',width);
+	// }
 
 	//making everything disappear on start
 		$('.skillsDiv').css('display','none');
@@ -438,13 +438,13 @@ $('.particleGround').particleground({
 });
 
 function toggleTinyBots(){
-
+debugger;
 	if($('.tinybotButton').html()=='Stop Tiny Bots'){
-		$('.particleground').particleground('pause');
+		$('.particleGround').particleground('pause');
 		$(".tinybotButton").html('Start Tiny Bots');
 	}
 	else if ($('.tinybotButton').html()=='Start Tiny Bots') {
-		$('.particleground').particleground('start');
+		$('.particleGround').particleground('start');
 		$(".tinybotButton").html('Stop Tiny Bots');
 		
 	}
