@@ -405,6 +405,15 @@ function  toggleDiv(id1,id2){
    else if(id2=='#page3'){
    		$('.myWorks').css('display','none');
    		$('.myWorks').fadeIn(2000);
+   		//for mobile responsive
+   		if($(window).width()<1000){
+   			$('#myWork1').css('left','26%');
+   			$('#myWork2').css('right','19%');
+   			$('#myWork2').css('top','470px');
+   			$('#myWork3').css('left','33%');
+   			$('#myWork3').css('top','520px');
+   		}
+
    }
    else if(id2=='#page4'){
    		$('.contact').css('display','none');
