@@ -8,7 +8,7 @@
 <head>
 	<title>Mayank Jain</title>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=device-width"> -->
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/tooltipster.bundle.min.css" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css">
@@ -255,14 +255,9 @@
 <script>	
 
 $(document).ready(function(){
-	// for(var j=1;j<5;j++){
 
-	// 	var height=window.innerHeight;
-	// 	var width=window.innerWidth;
-	// 	jQuery('#page'+j).css('height',height);
-	// 	jQuery('#page'+j).css('width',width);
-	// }
 
+	
 	//making everything disappear on start
 		$('.skillsDiv').css('display','none');
 		$('.skillsText').css('display','none');
@@ -326,8 +321,9 @@ $(document).ready(function(){
 	'blinkMax': 0.6,
 	'loopMin': 0.5,
 	'loopMax': 10,
-	'color': 'RED',
-	'blink':0
+	'color': 'WHITE',
+	'blink':0,
+	'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff'],
 	});
 	$('#my').novacancy({
 	'reblinkProbability': 0.4,
@@ -335,9 +331,9 @@ $(document).ready(function(){
 	'blinkMax': 0.6,
 	'loopMin': 0.5,
 	'loopMax': 10,
-	'color': 'ORANGE',
+	'color': 'WHITE',
 	'blink':0,
-	'glow': ['0 0 80px #e81e1e', '0 0 30px #ef0e0e', '0 0 6px #0000ff'],
+	'glow': ['0 0 80px #ffffff', '0 0 30px #008000', '0 0 6px #0000ff'],
 	});
     $('#skills').novacancy({
 	'reblinkProbability': 0.4,
@@ -380,6 +376,31 @@ function  toggleDiv(id1,id2){
    		$('.6').css('display','none');
    		$('.7').css('display','none');
    		$('.8').css('display','none');
+
+   		//responsive for mobile
+   		if($(window).width()<1000){
+			console.log($(window).width());
+			$('.skillsDiv').css('top','652px');
+			$('.1').css('top','670px');
+			$('.2').css('top','670px');
+			$('.3').css('top','670px');
+			$('.4').css('top','670px');
+			$('.5').css('top','670px');
+			$('.6').css('top','670px');
+			$('.7').css('top','670px');
+			$('.8').css('top','670px');
+			$('.skillsDiv').css('right','400px');
+			$('.1').css('right','400px');
+			$('.2').css('right','400px');
+			$('.3').css('right','400px');
+			$('.4').css('right','400px');
+			$('.5').css('right','200px');
+			$('.6').css('right','0px');
+			$('.7').css('right','600px');
+			$('.8').css('right','800px');
+
+
+		}
    }
    else if(id2=='#page3'){
    		$('.myWorks').css('display','none');
@@ -547,31 +568,6 @@ a:active{
 	margin-right:80px;
 
 }
-
-
-/*for phones and tablets*/
-
-@media only screen and (max-width: 768px) {
-
-
-	
-	.skillsDiv{
-		left:100px !important;
-		top:300px !important;
-	}
-	.skillsText{
-		display:none !important;
-	}
-    .myworks{
-    	width:200px !important;
-    	margin-right: 10px !important;
-    	height:200px !important ;
-    }
-
-
-
-}
-   
 
 
 </style>
