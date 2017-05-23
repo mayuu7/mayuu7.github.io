@@ -8,7 +8,7 @@
 <head>
 	<title>Mayank Jain</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/tooltipster.bundle.min.css" />
 	<link rel="stylesheet" type="text/css" href="tooltipster-master/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css">
@@ -255,13 +255,13 @@
 <script>	
 
 $(document).ready(function(){
-	for(var j=1;j<5;j++){
+	// for(var j=1;j<5;j++){
 
-		var height=window.innerHeight;
-		var width=window.innerWidth;
-		jQuery('#page'+j).css('height',height);
-		jQuery('#page'+j).css('width',width);
-	}
+	// 	var height=window.innerHeight;
+	// 	var width=window.innerWidth;
+	// 	jQuery('#page'+j).css('height',height);
+	// 	jQuery('#page'+j).css('width',width);
+	// }
 
 	//making everything disappear on start
 		$('.skillsDiv').css('display','none');
@@ -478,6 +478,8 @@ $('#myWorkImage3').hover(function(){$('#myWork3').css('background','linear-gradi
 
 
 
+
+
 </script>
 <style>
 .particleGround{
@@ -560,15 +562,16 @@ a:active{
 	.skillsText{
 		display:none !important;
 	}
-    .menu ul li{
-    	padding-right: 10px !important;
-    	font-size:14px;
+    .myworks{
+    	width:200px !important;
+    	margin-right: 10px !important;
+    	height:200px !important ;
     }
 
 
 
 }
-
+   
 
 
 </style>
